@@ -60,7 +60,7 @@ Replace `--data_path` and `--save_path` with your dataset and output paths. The 
 
 | Argument | Description |
 | --- | --- |
-| `--data_path` | Root directory of the CT dataset. |
+| `--data_path` | Root directory of the dataset. |
 | `--save_path` | Output directory for the distilled representation and generator checkpoints. |
 | `--spc` | The number of raw images used for initialization or selection. |
 | `--dpc` | The dimension of subject-specific adjustment code. |
