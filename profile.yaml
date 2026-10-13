@@ -1,0 +1,12 @@
+name: DD_CT_medical_ct_s2d_521
+entrypoint: chmod 777 ./train.sh && sh ./train.sh
+environment:
+  image: docker.1ms.run/determinedai/pytorch-ngc:0.38.1
+searcher:
+  name: single
+  metric: validation_loss
+  max_length:
+    batches: 1
+max_restarts: 0
+resources:
+  resource_pool: RTX3090
